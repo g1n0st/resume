@@ -100,7 +100,7 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\href{https://github.com/g1n0st}{\Large Yu Chang}} & Email : \href{mailto:g1n0st@live.com}{g1n0st@live.com}\\
-  \href{https://github.com/g1n0st}{https://github.com/g1n0st} & Mobile : +86-147-0570-5313 \\
+  \href{https://g1n0st.github.io}{https://g1n0st.github.io} & Mobile : +86-147-0570-5313 \\
 \end{tabular*}
 
 
@@ -114,7 +114,7 @@
         \resumeItem{GPA} {4.00/4.00}
 		\resumeItem{Average Score}{91.2}
         \resumeItem{Excellent Course}
-          {\href{https://yuanming.taichi.graphics/teaching/2020-games201/}{\textbf{GAMES 201}(The course project was selected as an outstanding project and displayed on the course official website)}, \href{http://staff.ustc.edu.cn/~lgliu/Courses/GAMES102_2020/default.html}{\textbf{GAMES 102}(Outstanding homework many times)}, Computer Architecture(91/100), Data Structure and Algorithm(94/100)}
+          {\href{https://yuanming.taichi.graphics/teaching/2020-games201/}{\textbf{GAMES 201}(Final project as the outstanding project displayed on the course official website)}, \href{http://staff.ustc.edu.cn/~lgliu/Courses/GAMES102\_2020/default.html}{\textbf{GAMES 102}(Outstanding homework)}, Computer Architecture(91/100), Data Structure and Algorithm(94/100)}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -122,43 +122,53 @@
 %-----------PROJECTS-----------------
 \section{Selected Graphics Related Projects}
   \resumeSubHeadingListStart
-   \resumeSubItem {\href{https://github.com/g1n0st/AyaRay}{\textbf{AyaRay}} $|$ \emph{Modern C++, Intel® Embree, Physically based rendering}}{}
+   \resumeSubItem {\href{https://github.com/g1n0st/AyaRay}{\textbf{AyaRay}} $|$ \emph{Modern C++, Intel® Embree, Physically-based rendering}}{}
 	 \resumeItemListStart
-        \resumeIteml{A physically based renderer for the purpose of learning global illumination and Ray Tracing}
-		\resumeIteml{Importance Sampling, Multiple Importance Sampling}
-        \resumeIteml{Light Transport Algorithms: PT, BDPT, MMLT, VCM}
-        \resumeIteml{Disney BRDF}
-        \resumeIteml{Use with the SIMD/SSE4 Instructions in Matrix Operations}
+        \resumeIteml{ A Paralleled Monte Carlo Path Tracing Renderer }
+		\resumeIteml{ Importance Sampling, Multiple Importance Sampling }
+        \resumeIteml{ Light Transport Algorithms: Practical Path Guiding(PPG), BDPT, MMLT, VCM }
+        \resumeIteml{ Disney BRDF, GGX BRDF }
+        \resumeIteml{ Use with the SIMD/SSE4 Instructions in Matrix Operations }
 	 \resumeItemListEnd
   \resumeSubHeadingListEnd
 
   \resumeSubHeadingListStart
-   \resumeSubItem {\href{https://github.com/g1n0st/GAMES201/tree/master/hw2}{\textbf{Multi-Species MLS-MPM}} $|$ \emph{Taichi, Python, Physically based simulation}}{}
+   \resumeSubItem {\href{https://github.com/g1n0st/taichi\_ferrofluid}{\textbf{taichi\_ferrofluid}} $|$ \emph{Taichi, Python, Physically-based simulation}}{}
 	 \resumeItemListStart
-        \resumeIteml{ Multi-species model for sand-water coupling with \textbf{MLS-MPM} algorithm}
-        \resumeIteml{ Simulate 10k particles scene in Real-time }
-		\resumeIteml{ Make use of the Taichi Sparse Structure }
+        \resumeIteml{ A Level-Set Method Euler Ferrofluid Simulator }
+		\resumeIteml{ Fast Marching Method, Fast Sweeping Method }
+        \resumeIteml{ Semi-Lagrangian/APIC Advection Scheme }
+		\resumeIteml{ Ghost Fluid Method, Volume Control Method, Semi-Implicit Surface Tension }
+		\resumeIteml{ Multi-grid Preconditioned Conjugate Gradient(MGPCG) for Poisson Equation }
+	 \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+  \resumeSubHeadingListStart
+   \resumeSubItem {\href{https://github.com/g1n0st/GAMES201/tree/master/hw2}{\textbf{Multi-Species MLS-MPM}} $|$ \emph{Taichi, Python, Physically-based simulation}}{}
+	 \resumeItemListStart
+        \resumeIteml{ Multi-species Mixture Model for sand-water coupling with MLS-MPM }
+		\resumeIteml{ Drucker-Prager Elastoplasticity for Sand Animation }
+        \resumeIteml{ Simulate 20K particles with 256x256 grid in Real-time }
 	 \resumeItemListEnd
   \resumeSubHeadingListEnd
 
    \resumeSubHeadingListStart
-   \resumeSubItem {\href{https://github.com/g1n0st/GAMES201/tree/master/extra/implicitMPM}{\textbf{Implicit MPM}} $|$ \emph{Taichi, Python, Physically based simulation}}{}
+   \resumeSubItem {\href{https://github.com/g1n0st/GAMES201/tree/master/extra/implicitMPM}{\textbf{Implicit MPM}} $|$ \emph{Taichi, Python, Physically-based simulation}}{}
 	 \resumeItemListStart
-        \resumeIteml{ An implicit integrator implementation of MPM algorithm }
-        \resumeIteml{ Newton iteration combined Conjugate Gradient scheme }
-		\resumeIteml{ Applied Line-search and other optimizations in \textit{Optimization integrator for large time steps} }
-		\resumeIteml{ Dimensionality-independent programming }
+        \resumeIteml{ An Implicit Material Point Method simulator with elastic model}
+        \resumeIteml{ Newton-Raphson Method, Preconditioned Conjugate Gradient(PCG) Solver }
+		\resumeIteml{ Optimization integrator for large time steps }
 	 \resumeItemListEnd
   \resumeSubHeadingListEnd
 
   \resumeSubHeadingListStart
-   \resumeSubItem {\href{https://github.com/g1n0st/GAMES201/tree/master/extra/WeaklyCompressibleSPH}{\textbf{Weakly Compressible SPH}} $|$ \emph{Taichi, Python, Physically based simulation}}{}
+   \resumeSubItem {\href{https://github.com/g1n0st/GAMES201/tree/master/extra/WeaklyCompressibleSPH}{\textbf{Weakly Compressible SPH}} $|$ \emph{Taichi, Python, Physically-based simulation}}{}
 	 \resumeItemListStart
-        \resumeIteml{ An implementation of WCSPH in the Taichi Language }
-        \resumeIteml{ Surface Tension Model in \textit{Pairwise Force SPH Model for Real-Time Multi-Interaction Applications} }
-		\resumeIteml{ Export particles to .ply file, Reconstruct and Render scene by Houdini }
+        \resumeIteml{ A Weakly Compressible SPH simulator in the Taichi Language }
+        \resumeIteml{ Pairwise Surface Tension Model }
 	 \resumeItemListEnd
   \resumeSubHeadingListEnd
+
 
 %-----------Publication-----------
 \section{Publication}
@@ -166,9 +176,10 @@
       \resumeSubItem
           {\href{}{\textbf{Real-time Physics Engine Based on MPM and PBD}} }{}
           \resumeItemListStart
-            \resumeIteml{\href{http://www.icvrv.org/index.html}{\textbf{ICVRV 2020}}}
+            \resumeIteml{\href{http://www.icvrv.org/index.html}{\textit{2020 International Conference on Virtual Reality and Visualization (ICVRV)}}}
         \resumeItemListEnd
     \resumeSubHeadingListEnd
+
 
 %-----------Award-----------
 \section{Honor and Awards}
@@ -185,11 +196,10 @@
 %--------PROGRAMMING SKILLS------------
 \section{Skills}
   \resumeSubHeadingListStart
-      \resumeSubItem{Languages}{ C++, Python, the Taichi Programming Language }
-	  \resumeSubItem{Frameworks}{ OpenGL, Tensorflow, Unity, \textbf{ziran2020} }
-      \resumeSubItem{Math}{ Numerical Analysis, Calculus, Linear Algebra, Scientific Computing }
+      \resumeSubItem{Languages}{ C++, CUDA, Python, \href{https://taichi.graphics}{the Taichi Programming Language} }
+	  \resumeSubItem{Frameworks}{ OpenGL, Tensorflow, Unity}
+      \resumeSubItem{Math}{ Numerical Analysis, Optimization, Matrix Theory, Scientific Computing }
   \resumeSubHeadingListEnd
-
 
 %-------------------------------------------
 \end{document}
